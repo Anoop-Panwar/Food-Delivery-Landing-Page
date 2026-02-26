@@ -6,7 +6,8 @@ export default function ResturantChain(){
     const[restChain, setRestChain] = useState([])
 
     const fetchResturantChain = async ()=>{
-        const response = await fetch("http://localhost:5173/restaurantChains.json")
+        // const response = await fetch("http://localhost:5173/restaurantChains.json")   this line is used only for local deployment it you want to deploy use second line 
+        const response = await fetch("/restaurantChains.json")
         const data = await response.json()
         setRestChain(data);
 

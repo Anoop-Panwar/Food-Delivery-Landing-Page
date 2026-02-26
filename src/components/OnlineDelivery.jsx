@@ -7,7 +7,8 @@ export default function OnlineDelivery(){
     const[resturantdata, setResturantData] = useState([])
 
     const fetchResturantData = async ()=>{
-        const response =  await fetch("http://localhost:5173/restaurantChains.json");
+        // const response =  await fetch("http://localhost:5173/restaurantChains.json"); this line is used for local deployment during deplyment use second line
+        const response =  await fetch("/restaurantChains.json");
         const data = await response.json();
         setResturantData(data)
 
