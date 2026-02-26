@@ -8,7 +8,7 @@ export default function Category(){
 
     const fetchCategories = async ()=>{
         // const resopnse = await fetch("http://localhost:5173/category.json"); this line is used only for local deployment it you want to deploy use second line
-        const resopnse = await fetch("http://localhost:5173/category.json");
+        const resopnse = await fetch("/category.json");
         const data = await resopnse.json();
         setCategories(data);
 
