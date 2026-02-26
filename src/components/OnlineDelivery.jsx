@@ -31,7 +31,7 @@ export default function OnlineDelivery(){
 
                             return(
                                 <div>
-                                    <Card key={index} image={"images/"+resturant.image}
+                                    <Card key={index} image={"/images/"+resturant.image}
                                                         offer={resturant.offer}
                                                         title={resturant.title}
                                                         rating={resturant.rating}
