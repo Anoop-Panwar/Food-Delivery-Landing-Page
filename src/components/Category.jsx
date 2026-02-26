@@ -7,7 +7,8 @@ export default function Category(){
     const[categories, setCategories] = useState([])
 
     const fetchCategories = async ()=>{
-        const resopnse = await fetch("http://localhost:5173/category.json")
+        // const resopnse = await fetch("http://localhost:5173/category.json"); this line is used only for local deployment it you want to deploy use second line
+        const resopnse = await fetch("http://localhost:5173/category.json");
         const data = await resopnse.json();
         setCategories(data);
 
@@ -56,7 +57,7 @@ export default function Category(){
                                 <div className="w-37.5 shrink-0 duration-500" 
                                     style={{ transform: `translatex(-${slide}px)`}}key={index} >
 
-                                    <img src={"http://localhost:5173/images/"+cat.image} alt="" />
+                                    <img src={"/images/"+cat.image} alt="" />
                                 </div>
                             )
                         }
