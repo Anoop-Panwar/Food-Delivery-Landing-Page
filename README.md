@@ -16,7 +16,7 @@
 
 ## 📸 Project Sneak Peek
 
-> **Note:** *Insert a desktop screenshot of your landing page here. Example: `![Desktop View](./public/screenshot.png)`*
+> ![image](https://github.com/Anoop-Panwar/Food-Delivery-Landing-Page/blob/dd98991383391dfcfe2f062ed07b595b968c12d0/ScreenShot.png)
 
 ---
 
